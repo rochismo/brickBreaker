@@ -5,7 +5,7 @@ const canvas = document.querySelector("#game"),
     ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-const paddle = new Paddle(new Vector(canvas.width / 2, canvas.height / 4))
+const paddle = new Paddle(new Vector(canvas.width / 2, canvas.height / 4), 50, 20, new Vector(0,0), ctx);
 
 window.onresize = () => {
     canvas.width = window.innerWidth;
@@ -15,7 +15,7 @@ window.onresize = () => {
 function render() {
     ctx.fillStyle = "#000";
     ctx.fillRect();
-
+    paddle.display();
 }
 
 function update() {
