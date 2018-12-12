@@ -1,7 +1,23 @@
-import { Paddle } from './entities/paddle.js';
+import {
+    Paddle
+} from './entities/paddle.js';
+const canvas = document.querySelector("#game"),
+    ctx = canvas.getContext("2d");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+const paddle = new Paddle()
 
-<<<<<<< HEAD
+window.onresize = () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
 
-// bolo
-=======
->>>>>>> 0a889f9d0585d33ebb972d3ef8f1e0f597e9434b
+function render() {
+    ctx.fillStyle = "#000";
+    ctx.fillRect();
+
+}
+
+function update() {
+
+}
