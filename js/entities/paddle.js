@@ -1,9 +1,10 @@
 export class Paddle {
-    constructor(pos, size, color, vel) {
+    constructor(pos, size, color, vel, ctx) {
         this.pos = pos;
         this.size = size;
         this.color = color;
         this.vel = vel;
+        this.ctx = ctx;
     }
 
     display() {
