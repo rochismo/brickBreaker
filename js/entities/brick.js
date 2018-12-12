@@ -1,9 +1,9 @@
 export class Brick{
-    constructor(pos, color, size, vel, ctx){
+    constructor(pos, color, size, idx, ctx){
         this.pos = pos;
         this.color = color;
         this.size = size;
-        this.vel = vel;
+        this.idx = idx;
         this.ctx = ctx;
     }
 
@@ -12,5 +12,8 @@ export class Brick{
         this.ctx.fillRect(this.pos.x,this.pos.y,this.size.w,this.size.h);
     }
 
-    
+    update(){
+        
+    }
+
 }
